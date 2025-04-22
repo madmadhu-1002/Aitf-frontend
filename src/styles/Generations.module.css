@@ -1,0 +1,61 @@
+.ambulance {
+    background-image: url('/assets/image 38.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0; /* Optional: adds space around the content */
+  }
+
+  .armoring {
+    background-image: url('/assets/image 39.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0; /* Optional: adds space around the content */
+  }
+
+  .commercial {
+    background-image: url('/assets/image 46.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0; /* Optional: adds space around the content */
+  }
+
+  .defence {
+    background-image: url('/assets/image 47.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0; /* Optional: adds space around the content */
+  }
+  .mining {
+    background-image: url('/assets/image 36.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    padding: 60px 0; /* Optional: adds space around the content */
+  }
+  .mobile {
+    background-image: url('/assets/image 48.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0; /* Optional: adds space around the content */
+  }
+
+  .police {
+    background-image: url('/assets/image 49.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0; /* Optional: adds space around the content */
+  }
+  .vip {
+    background-image: url('/assets/image 37.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0; /* Optional: adds space around the content */
+  }

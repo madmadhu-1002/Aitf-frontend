@@ -1,0 +1,17 @@
+.aboutButton{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .aboutDiv {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  
