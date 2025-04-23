@@ -33,8 +33,8 @@ const Faqs = () => {
             {toggleIcon(index.toString())}
           </Accordion.Header>
           <Accordion.Body>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            It has been the industry's standard dummy text since the 1500s.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+          It has been the industry&#39;s standard dummy text since the 1500s.
           </Accordion.Body>
         </Accordion.Item>
       ))}
