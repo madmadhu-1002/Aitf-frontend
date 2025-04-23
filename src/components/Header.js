@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Navbar, Container, Nav, Form, Button } from 'react-bootstrap';
 
 const Header = () => (
-  <Navbar expand="lg" bg="light" variant="light">
+  <Navbar expand="lg" bg="white" variant="light">
     <Container fluid>
       <Navbar.Brand as={Link} href="/">
         <Image

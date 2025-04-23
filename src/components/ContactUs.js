@@ -85,10 +85,10 @@ const ContactUs = () => {
         </div>
 
       </div>
-      <Container fluid className='mt-3 ms-3'>
+      <Container fluid className='mt-3 w-100'>
         <Row>
-          <Col sm={6}>
-            <div>
+          <Col sm={6} className='ms-3'>
+            <div >
               <h3>
                 Contact Us
               </h3>
@@ -115,7 +115,7 @@ const ContactUs = () => {
             </div>
           </Col>
           <Col>
-            <div className="p-4 bg-white shadow rounded" style={{ maxWidth: "600px", margin: "0 auto" }}>
+            <div className="p-4 bg-white shadow rounded" style={{  margin: "0 auto" }}>
               <h4 className="mb-4 fw-bold">Send Us a message</h4>
               <Form onSubmit={handleSubmit}>
                 <Row className="mb-3">
@@ -188,8 +188,8 @@ const ContactUs = () => {
             <Card className={`${styles.customCard} shadow-sm border-0`}>
               <Image
                 src={card.image}
-                width={600}
-                height={300}
+                width={356}
+                height={278}
                 className=' rounded-top-4'
                 alt={card.title}
               />

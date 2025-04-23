@@ -1,15 +1,7 @@
-.careerBg {
-    background-image: url('/assets/career.png'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 459px;
-    padding: 60px 0; /* Optional: adds space around the content */
-  }
-
-  .careerText{
-    position: relative;
-    top: 65%;
-    left: 5%;
-    color: white;
-  }
+.careerDiv {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 10;
+}

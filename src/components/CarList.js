@@ -12,13 +12,13 @@ const CarList = () => {
   };
   return (
     <>
-    <Container fluid>
+    <Container fluid className="mb-3 mt-3 pe-4 ps-5">
         
     <Row className="g-3">
   {/* Left Column */}
   <Col sm={4} className={`${styles.carListBg} me-sm-3`}>
-    <h2 className="fs-4 text-primary">Vehicle Modifications</h2>
-    <Row className="g-2">
+    <h2 className="fs-4 text-primary mt-4 mb-4">Vehicle Modification</h2>
+    <Row className="g-2 mb-3 ">
       {[...Array(3)].map((_, i) => (
         <Col sm={6} key={i}>
           <div className="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-white rounded-2">
@@ -37,7 +37,7 @@ const CarList = () => {
 
   {/* Right Column */}
   <Col className={styles.carListBg}>
-    <h2>Ambulances</h2>
+    <h2 className="ps-4 pt-4">Ambulances</h2>
     <Row className="g-2">
       {[...Array(3)].map((_, i) => (
         <Col sm={4} key={i}>

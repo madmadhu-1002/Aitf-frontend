@@ -19,7 +19,6 @@ const Projects = () => {
             boxShadow: hovered ? '0 10px 20px rgba(0, 0, 0, 0.15)' : 'none',
             transition: 'box-shadow 0.3s ease',
             background: '#fff',
-            width: '400px',
             margin: '1rem',
           }}
         >

@@ -111,9 +111,9 @@ const AccessoryDesc = () => {
             </div>
           </div>
         </Container>
-        <Container fluid className='mt-3 ms-3 me-0'>
+        <Container fluid className='mt-3 me-0'>
         <Row>
-          <Col sm={6}>
+          <Col sm={6} className='ms-3'>
             <div>
               <h3>
                 Contact Us

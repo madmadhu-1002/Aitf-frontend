@@ -161,9 +161,9 @@ const Partners = () => {
   }, [emblaApi]);
 
   return (
-    <Container fluid className="py-5">
+    <Container fluid className="py-5 border-bottom border-top border-black mt-4">
       <Row>
-        <h3 className="text-center mb-4">OUR PARTNERS</h3>
+        <h3 className="text-center mb-4">Partners and Certifications</h3>
         <div className="position-relative w-100 overflow-hidden" ref={emblaRef}>
           {/* Carousel Items */}
           <div className="d-flex gap-3">
@@ -171,7 +171,6 @@ const Partners = () => {
               <div
                 key={logo.id}
                 className="flex-shrink-0 pe-2"
-                style={{ width: '25%' }}
               >
                 <a
                   href={logo.link || "#"}

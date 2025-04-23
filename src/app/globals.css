@@ -24,3 +24,41 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.accordion-button::after {
+  display: none !important;
+  
+}
+
+.accordion-button{
+  background-color: #F5FAFF !important;
+}
+
+.email-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.email-input {
+  width: 100%;
+  padding-right: 110px; /* space for the button */
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ced4da;
+}
+
+.email-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  background-color: #434343;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  border: 1px solid #ced4da;
+}

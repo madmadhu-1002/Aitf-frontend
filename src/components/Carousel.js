@@ -75,8 +75,8 @@ const Carousel = () => {
                             <h1 className="fw-bold display-6 display-md-5 display-lg-4">Transform Your Vision Into Reality</h1>
                             <p className="fs-6 fs-md-5 fs-lg-4">Professional Vehicle & Metal Modifications</p>
                             <div className="d-flex flex-wrap gap-2 mt-3">
-                                <Button variant="primary" onClick={handleApplyClick}>Vehicle Modifications</Button>
-                                <Button variant="outline-light" onClick={handleApplyClick}>Metal Works</Button>
+                                <Button variant="primary" onClick={handleApplyClick} className='rounded-0 pe-3 ps-3'>Vehicle Modifications</Button>
+                                <Button variant="outline-light" onClick={handleApplyClick} className='pe-3 ps-3'>Metal Works</Button>
                             </div>
                         </div>
                     </div>

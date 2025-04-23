@@ -73,6 +73,7 @@ const AboutUs = () => {
             <div className={`${styles.carouselDiv} ms-2 text-dark`} >
               <h2 className="fw-bold display-6 display-md-5 display-lg-4">About AITF</h2>
               <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
+              <p className="fs-6 fs-md-5 fs-lg-4">We meticulously design our extensive range of products and services to enhance your vehicle's performance and potential, efficiently addressing all aftermarket needs.</p>
               <Button variant="dark">Contact Us</Button>
             </div>
           </Col>
@@ -87,6 +88,8 @@ const AboutUs = () => {
             <div className={`${styles.carouselDiv} ms-2 text-dark`} >
               <h2 className="fw-bold display-6 display-md-5 display-lg-4">History Of AITF</h2>
               <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
+              <p className="fs-6 fs-md-5 fs-lg-4">Our industry experience spans over 65 years. Our expansive footprint and robust network are our greatest strengths.</p>
+              <p className="fs-6 fs-md-5 fs-lg-4">Guided by a corporate vision to be a globally recognized business group that creates lifelong customer relationships, Bahwan International Group boasts an impressive portfolio of brands, including Suzuki, Changan, Foton, BAIC, Iveco, CASE, Terex, Wacker Neuson, and Topcon, among many others.</p>
               <div className="d-flex flex-wrap gap-2 mt-3">
                 <Button variant="dark">Read More</Button>
                 <Button variant="primary">Contact Us</Button>
@@ -125,7 +128,7 @@ const AboutUs = () => {
           <Col sm={6}>
             <div className={`${styles.carouselDiv} ms-2 mt-3`} >
               <h2 className="fw-bold display-6 display-md-5 display-lg-4">Nissan Y62</h2>
-              <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
+              <p className="fs-6 fs-md-5 fs-lg-4">&quot;I chose AWeber because I simply could not find any other provider that offered all the tools I needed under one platform, such as autoresponders, self-hosted sign up forms, and integration with third-party apps. I also love AWeber&#39;s pay-as-you-grow billing scale, which enables companies with smaller mailing lists to have full access to all the robust features AWeber offers without being up-charged.&quot;</p>
               <div className="d-flex flex-wrap gap-2 mt-3">
                 <Button variant="dark">Read More</Button>
                 <Button variant="primary">Know More</Button>
