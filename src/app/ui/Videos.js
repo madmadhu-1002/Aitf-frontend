@@ -12,13 +12,13 @@ const Videos = () => {
       <Container className="mt-5">
         <h1 style={{ marginBottom: '0.3rem', fontSize: '32px', fontWeight: 700 }}>Videos</h1>
         <Row>
-          <Col md={4}>
+          <Col xl={4} md={6}  >
             <VideoCard />
           </Col>
-          <Col md={4}>
+          <Col xl={4} md={6}  >
           <VideoCard />
           </Col>
-          <Col md={4}>
+          <Col xl={4} md={6}  >
           <VideoCard />
           </Col>
           
@@ -30,17 +30,17 @@ const Videos = () => {
         <h1 style={{ marginBottom: '0.3rem', fontSize: '32px', fontWeight: 700 }}>Popular Modifications</h1>
         <Row data-aos="fade-up"
      data-aos-anchor-placement="center-center">
-          <Col md={3}>
-            <ModificationCard />
+          <Col lg={3} md={4}  sm={6}>
+            <ModificationCard image={"/assets/image.png"}/>
           </Col>
-          <Col md={3}>
-            <ModificationCard />
+          <Col lg={3} md={4}  sm={6}>
+            <ModificationCard image={"/assets/modif2.png"}/>
           </Col>
-          <Col md={3}>
-            <ModificationCard />
+          <Col lg={3} md={4}  sm={6}>
+            <ModificationCard image={"/assets/modif3.png"}/>
           </Col>
-          <Col md={3}>
-            <ModificationCard />
+          <Col lg={3} md={4}  sm={6}>
+            <ModificationCard image={"/assets/modif4.png"}/>
           </Col>
         </Row>
         <div className="d-flex mt-4">

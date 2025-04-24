@@ -87,15 +87,15 @@ const ContactUs = () => {
         />
         <div className="d-flex justify-content-center">
           <div className={`${styles.contactDiv} text-white text-center`}>
-            <h1 className="fw-bold display-6 display-md-5 display-lg-4">Get In Touch</h1>
-            <p className="fs-6 fs-md-5 fs-lg-4">We&rsquo;re here to help with all your automotive needs</p>
+            <h1 className={`${styles.textFontMd} fw-bold display-6 display-md-5 display-lg-4`}>Get In Touch</h1>
+            <p className={`${styles.textFontMd} fs-6 fs-md-5 fs-lg-4`}>We&rsquo;re here to help with all your automotive needs</p>
           </div>
         </div>
 
       </div>
       <Container fluid className='mt-3 w-100'>
         <Row>
-          <Col sm={6} className='ms-3' data-aos='fade-right'>
+          <Col sm={6}  data-aos='fade-right'>
             <div >
               <h3>
                 Contact Us

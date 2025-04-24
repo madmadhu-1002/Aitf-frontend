@@ -26,37 +26,35 @@ const SupportProjects = () => {
         />
         <div className="d-flex justify-content-center">
           <div className={`${styles.projectsDiv} text-white text-center`}>
-            <h1 className="fw-bold display-6 display-md-5 display-lg-4">you can&#39;t literally &quot;find&quot; a best friend for your car</h1>
+            <h1 className={`${styles.textFontMd} fw-bold display-6 display-md-5 display-lg-4`}>you can&#39;t literally &quot;find&quot; a best friend for your car</h1>
 
           </div>
         </div>
 
       </div>
       <Container fluid>
-        <h1 style={{ marginBottom: '0.3rem', fontSize: '36px', fontWeight: 700 }}>Projects</h1>
+        <h1 style={{ marginBottom: '0.3rem', fontSize: '36px', fontWeight: 700, paddingLeft:'24px' }}>Projects</h1>
         <Row>
-          <Col sm={4}>
-            <Projects />
+          <Col lg={4} md={6}>
+            <Projects image={"/assets/image 23.png"}/>
           </Col>
-          <Col sm={4}>
-            <Projects />
+          <Col lg={4} md={6} >
+            <Projects image={"/assets/transform2.png"}/>
           </Col>
-          <Col sm={4}>
-            <Projects />
+          <Col lg={4} md={6} >
+            <Projects image={"/assets/transform3.png"}/>
           </Col>
-          <Col sm={4}>
-            <Projects />
-          </Col>
+          
         </Row>
       </Container>
-      <Container>
+      <Container fluid style={{paddingLeft:'48px'}}>
         <Row>
-          <Col>
+          <Col md={6}>
             <h3>After Sales Support</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
           </Col>
-          <Col>
+          <Col md={6}>
             <Image
               src="/assets/BESTUNE T77.png"
               width={706}
@@ -69,7 +67,7 @@ const SupportProjects = () => {
       </Container>
       <Container>
         <Row>
-          <Col>
+          <Col md={6}>
             <Image
               src="/assets/image 9.png"
               width={583}
@@ -78,7 +76,7 @@ const SupportProjects = () => {
               layout="responsive"
             />
           </Col>
-          <Col>
+          <Col md={6}>
             <h3>After Sales Support</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
@@ -88,15 +86,15 @@ const SupportProjects = () => {
       </Container>
       <Container className='bg-black text-white mt-3 mb-3'>
         <Row>
-          <Col className='pt-5'>
+          <Col className='pt-5' md={6}>
             <h3>Training</h3>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             <div className="d-flex flex-wrap gap-2">
-              <Button variant="primary">Contact Us</Button>
-              <Button variant="light">Training</Button>
+              <Button variant="primary" className='rounded-0 px-3'>Contact Us</Button>
+              <Button variant="light" className='rounded-0 px-3'>Training</Button>
             </div>
           </Col>
-          <Col>
+          <Col md={6}>
             <Image
               src="/assets/image 7.png"
               width={583}

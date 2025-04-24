@@ -15,14 +15,14 @@ const Cards = () => {
       <Container fluid className="mt-5 border-bottom border-black">
         <h1 className='text-center' style={{ marginBottom: '0.3rem', fontSize: '36px', fontWeight: 700 }}>Latest Transformations</h1>
         <Row>
-          <Col md={4}>
-          <TransformationCard />
+          <Col lg={4} md={6} >
+          <TransformationCard image={"/assets/image 23.png"} title={"AUDI Competition"} subtitle={"Complete performance upgrade package"} price={"AED 45,000"}/>
           </Col>
-          <Col md={4}>
-          <TransformationCard />
+          <Col lg={4} md={6} >
+          <TransformationCard image={"/assets/transform2.png"} title={"Benz Cyberstar"} subtitle={"Complete performance upgrade package"} price={"AED 55,000"}/>
           </Col>
-          <Col md={4}>
-          <TransformationCard />
+          <Col lg={4} md={6} >
+          <TransformationCard image={"/assets/transform3.png"} title={"Ranger Rover"} subtitle={"Complete performance upgrade package"} price={"AED 35,000"}/>
           </Col>
         </Row>
         
@@ -31,17 +31,17 @@ const Cards = () => {
       <Container fluid className="mt-5 border-bottom border-black pb-5">
           <h1 className='text-center' style={{ marginBottom: '0.3rem', fontSize: '36px', fontWeight: 700 }}>Popular Accessories</h1>
           <Row>
-          <Col md={3}>
-          <AccessoryCard />
+          <Col lg={3} md={4}  sm={6}>
+          <AccessoryCard image={"/assets/image 41.png"} newArrival={true}/>
           </Col>
-          <Col md={3}>
-          <AccessoryCard />
+          <Col lg={3} md={4}  sm={6}>
+          <AccessoryCard image={"/assets/accessory2.png"} newArrival={true}/>
           </Col>
-          <Col md={3}>
-          <AccessoryCard />
+          <Col lg={3} md={4}  sm={6}>
+          <AccessoryCard image={"/assets/accessory4.png"}/>
           </Col>
-          <Col md={3}>
-          <AccessoryCard />
+          <Col lg={3} md={4}  sm={6}>
+          <AccessoryCard image={"/assets/image 41.png"} newArrival={true}/>
           </Col>
         </Row>
         <div className="d-flex mt-4">
@@ -71,16 +71,16 @@ const Cards = () => {
             </button>
           </div>
           <Row>
-          <Col md={3}>
+          <Col lg={3} md={4}  sm={6}>
           <TestimonialCard />
           </Col>
-          <Col md={3}>
+          <Col lg={3} md={4}  sm={6}>
           <TestimonialCard />
           </Col>
-          <Col md={3}>
+          <Col lg={3} md={4}  sm={6}>
           <TestimonialCard />
           </Col>
-          <Col md={3}>
+          <Col lg={3} md={4}  sm={6}>
           <TestimonialCard />
           </Col>
         </Row> 

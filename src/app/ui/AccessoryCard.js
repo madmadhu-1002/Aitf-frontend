@@ -2,17 +2,17 @@
 
 import { useState } from "react"
 import { Container, } from "react-bootstrap"
-
+import Image from "next/image";
 import { useRouter } from 'next/navigation';
 
-const AccessoryCard = () => {
+const AccessoryCard = ({ image,newArrival=false }) => {
     const router = useRouter();
     const [hovered, setHovered] = useState(false);
-    
 
-  const handleApplyClick = () => {
-    router.push('/accessories/roof-top'); // your dynamic slug path
-  };
+
+    const handleApplyClick = () => {
+        router.push('/accessories/roof-top'); // your dynamic slug path
+    };
     return (
         <>
             <Container className="mt-5">
@@ -21,7 +21,7 @@ const AccessoryCard = () => {
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
                     style={{
-                        
+
                         borderRadius: '12px',
                         overflow: 'hidden',
                         backgroundColor: '#fff',
@@ -32,31 +32,35 @@ const AccessoryCard = () => {
                     }}
                 >
                     <div style={{ position: 'relative' }}>
-                        <img
-                            src="/assets/image 41.png"
+                        <Image
+                            src={image}
                             alt="Tent on Car"
+                            width={616} // adjust this based on your layout
+                            height={346} // adjust this based on your layout
+                            layout="responsive"
                             style={{
-                                width: '100%',
-                                height: 'auto',
                                 display: 'block',
                                 transform: hovered ? 'scale(1.03)' : 'scale(1)',
                                 transition: 'transform 0.3s ease-in-out'
                             }}
                         />
-                        <div
-                            style={{
-                                position: 'absolute',
-                                top: '10px',
-                                right: '10px',
-                                backgroundColor: '#FFCC00',
-                                padding: '4px 10px',
-                                borderRadius: '6px',
-                                fontWeight: '600',
-                                fontSize: '14px'
-                            }}
-                        >
-                            New Arrivals
-                        </div>
+                        {newArrival ?
+                            <div
+                                style={{
+                                    position: 'absolute',
+                                    top: '10px',
+                                    right: '10px',
+                                    backgroundColor: '#FFCC00',
+                                    padding: '4px 10px',
+                                    borderRadius: '6px',
+                                    fontWeight: '600',
+                                    fontSize: '14px'
+                                }}
+                            >
+                                New Arrivals
+                            </div> : <></>
+                        }
+
                     </div>
 
                     <div style={{ padding: '1rem' }}>

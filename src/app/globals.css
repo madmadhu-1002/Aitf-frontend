@@ -63,5 +63,7 @@ body {
   border: 1px solid #ced4da;
 }
 
-
+.hover-text-primary:hover {
+  color: var(--bs-primary); /* Bootstrap primary */
+}
 

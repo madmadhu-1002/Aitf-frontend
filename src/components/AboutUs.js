@@ -7,6 +7,13 @@ import styles from '@/styles/AboutUs.module.css'
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
 import AOS from "aos";
 import { useEffect } from "react";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaYoutube,
+  FaXTwitter,
+  FaTiktok,
+} from "react-icons/fa6";
 
 
 
@@ -14,17 +21,17 @@ const philosophyPoints = [
   {
     title: 'Our Vision',
     description: 'We foster a culture that embraces creativity and forward-thinking solutions.',
-    icon: <FaRegLightbulb className="text-3xl text-blue-600" />,
+    img: '/assets/vision.png',
   },
   {
     title: 'Our Mission',
     description: 'We believe in the power of teamwork and strategic partnerships.',
-    icon: <FaHandsHelping className="text-3xl text-green-600" />,
+    img: '/assets/mission.png',
   },
   {
     title: 'Our Values',
     description: 'Our employees and clients are at the heart of everything we do.',
-    icon: <FaUsers className="text-3xl text-purple-600" />,
+    img: '/assets/values.png',
   },
 ];
 
@@ -58,14 +65,14 @@ const AboutUs = () => {
         </div>
         <div className="d-flex justify-content-center">
           <div className={`${styles.aboutButton} text-white text-center`}>
-            <Button>Get In Touch</Button>
+            <Button className={`${styles.btn}`}>Get In Touch</Button>
           </div>
         </div>
 
       </div>
       {/* about */}
       <Container fluid className={styles.ambulance}>
-        <Row data-aos="fade-right">
+        <Row data-aos="fade-right" className='mt-5'>
 
           <Col sm={6} className="d-flex flex-column justify-content-end">
             <div>
@@ -81,10 +88,10 @@ const AboutUs = () => {
           </Col>
           <Col sm={6}>
             <div className={`${styles.carouselDiv} ms-2 text-dark`} >
-              <h2 className="fw-bold display-6 display-md-5 display-lg-4">About AITF</h2>
+              <h2 className="fw-bold display-6 display-md-5 display-lg-4" style={{ fontWeight: 700, fontSize: '48px' }}>About <span style={{ color: '#0071FF' }}>AITF</span></h2>
               <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
               <p className="fs-6 fs-md-5 fs-lg-4">We meticulously design our extensive range of products and services to enhance your vehicle&#39;s performance and potential, efficiently addressing all aftermarket needs.</p>
-              <Button variant="dark">Contact Us</Button>
+              <Button variant="dark" className={styles.btn1}>Contact Us</Button>
             </div>
           </Col>
         </Row>
@@ -96,20 +103,20 @@ const AboutUs = () => {
 
           <Col sm={6} className='order-2 order-sm-1'>
             <div className={`${styles.carouselDiv} ms-2 text-dark `} >
-              <h2 className="fw-bold display-6 display-md-5 display-lg-4">History Of AITF</h2>
+              <h2 className="fw-bold display-6 display-md-5 display-lg-4" style={{ fontSize: '48px', fontWeight: '700' }}>History Of AITF</h2>
               <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
               <p className="fs-6 fs-md-5 fs-lg-4">Our industry experience spans over 65 years. Our expansive footprint and robust network are our greatest strengths.</p>
               <p className="fs-6 fs-md-5 fs-lg-4">Guided by a corporate vision to be a globally recognized business group that creates lifelong customer relationships, Bahwan International Group boasts an impressive portfolio of brands, including Suzuki, Changan, Foton, BAIC, Iveco, CASE, Terex, Wacker Neuson, and Topcon, among many others.</p>
               <div className="d-flex flex-wrap gap-2 mt-3">
-                <Button variant="dark">Read More</Button>
-                <Button variant="primary">Contact Us</Button>
+                <Button variant="dark" className={styles.btn1}>Read More</Button>
+                <Button variant="primary" className={styles.btn2}>Contact Us</Button>
               </div>
             </div>
           </Col>
           <Col sm={6} className="d-flex flex-column justify-content-end order-1 order-sm-2">
             <div>
               <Image
-                src="/assets/miltary1.png"
+                src="/assets/miltary2.png"
                 width={1920}
                 height={860}
                 alt="ambulance"
@@ -121,31 +128,30 @@ const AboutUs = () => {
         </Row>
       </Container>
       {/* case study */}
-      <Container fluid className={`bg-black p-3 text-white ${styles.ambulance}`}>
+      <h2 className=" display-6 display-md-5 display-lg-4 mt-5" style={{ marginLeft: '20px', fontSize: '48px', fontWeight: '600' }}>Case Study</h2>
+      <Container fluid className={`bg-black text-white  ${styles.ambulance}`}>
         <Row >
           <Col sm={5} className="d-flex flex-column justify-content-end">
             <div>
-              <Image
-                src="/assets/miltary1.png"
-                width={1920}
-                height={860}
+              <Image className='pt-2'
+                src="/assets/miltary3.png"
+                width={510}
+                height={376}
                 alt="ambulance"
-                layout="responsive"
-
+                layout='responsive'
               />
             </div>
           </Col>
           <Col sm={7}>
-            <div className={`${styles.carouselDiv} ms-2 mt-3`} >
-              <h2 className="fw-bold display-6 display-md-5 display-lg-4">Nissan Y62</h2>
-              <p className="fs-4 fs-md-3 fs-lg-2">&quot;I chose AWeber because I simply could not find any other provider that offered all the tools I needed under one platform, such as autoresponders, self-hosted sign up forms, and integration with third-party apps. I also love AWeber&#39;s pay-as-you-grow billing scale, which enables companies with smaller mailing lists to have full access to all the robust features AWeber offers without being up-charged.&quot;</p>
-              <div className="d-flex flex-wrap gap-2 mt-3">
-                <Button  variant="primary" className='p'>Read More</Button>
-                <Button variant="dark">Know More</Button>
+            <div className={`${styles.carouselDiv} ms-2 mt-3 mb-3`} >
+              <h2 className="fw-bold display-6 display-md-5 display-lg-4" style={{ marginRight: '20px', fontSize: '24px !important', fontWeight: '400' }}>Nissan Y62</h2>
+              <p className="fs-6 fs-md-5 fs-lg-4" style={{ marginRight: '20px', fontSize: '24px !important', fontWeight: '400' }} >&quot;I chose AWeber because I simply could not find any other provider that offered all the tools I needed under one platform, such as autoresponders, self-hosted sign up forms, and integration with third-party apps. I also love AWeber&apos;s pay-as-you-grow billing scale, which enables companies with smaller mailing lists to have full access to all the robust features AWeber offers without being up-charged.&quot;</p>
+              <div className="d-flex flex-wrap gap-2 mt-3 mb-3">
+                <Button className={`${styles.btn2}`}>Read More</Button>
+                <Button className={`${styles.btn3}`}>Know More</Button>
               </div>
             </div>
           </Col>
-
         </Row>
       </Container>
       {/* philosophy */}
@@ -155,17 +161,16 @@ const AboutUs = () => {
         <Row className="g-4">
           {philosophyPoints.map((point, index) => (
             <Col md={4} key={index}>
-              <Card className="border-0 h-100" data-aos='flip-left'>
-                <Card.Body className="p-4 bg-light rounded shadow-sm">
-                  <div className="mb-3 d-flex justify-content-center">
-                    {point.icon}
-                  </div>
-                  <h3 className="h5 mb-2">{point.title}</h3>
-                  <Card.Text className="text-muted mb-0">
-                    {point.description}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              <div className={styles.card}>
+            <div className={styles.headerRow}>
+              <div className={styles.iconCircle}>
+              <Image src={point.img} width={40} height={40} alt="Vision Icon" />
+              </div>
+              <h3>{point.title}</h3>
+            </div>
+            <p>{point.description}</p>
+          </div>
+              
             </Col>
           ))}
         </Row>
@@ -174,31 +179,46 @@ const AboutUs = () => {
       {/* our team */}
       <section className="py-5 bg-light">
       <Container>
-        <h2 className="text-center h3 fw-semibold mb-4">Team of Experts</h2>
+        <h2 className="text-center h3 fw-semibold mb-4" style={{fontSize:'40px', fontWeight:'600'}}>Team of Experts</h2>
         <Row className="g-4">
           {teamMembers.map((member, idx) => (
-            <Col md={4} key={idx} data-aos='fade-up'>
-              <Card className="text-center h-100 border-0">
-                <div className="mx-auto mt-3" style={{ width: 120, height: 120 }}>
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={120}
-                    height={120}
-                    className="rounded-circle"
-                  />
-                </div>
-                <Card.Body>
-                  <Card.Title className="h6">{member.name}</Card.Title>
-                  <Card.Subtitle className="mb-2 text-muted">{member.title}</Card.Subtitle>
-                  <Card.Text className="text-muted" style={{ fontSize: '0.875rem' }}>
-                    {member.description}
-                  </Card.Text>
-                  <div className="d-flex justify-content-center gap-3 text-primary fs-5">
-                    {/* Icons could go here */}
-                  </div>
-                </Card.Body>
-              </Card>
+            <Col lg={4} md={6} key={idx} data-aos='fade-up'>
+              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 font-sans mb-4">
+      {/* Top Image */}
+      <div className="w-100 position-relative" style={{ height: "250px" }}>
+        <Image
+          src={member.image}
+          alt="Sarah Chen"
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+
+      {/* Middle Section */}
+      <div className="border-top px-4 pt-3 ">
+        <div className="d-flex align-items-center gap-2">
+          <span className="fw-bold text-dark" style={{fontSize:'20px', fontWeight:'600'}}>Sarah Chen</span>
+          <span className="text-muted small" style={{fontSize:'16px', fontWeight:'500', marginLeft:'10px'}}>Senior UX Designer</span>
+        </div>
+      </div>
+       <hr></hr>
+      {/* Bio */}
+      <div className="px-4 pb-3">
+        <p className="text-muted small mb-2" style={{fontSize:'16px', fontWeight:'400'}}>
+          10+ years of experience in creating user-centered digital experiences
+          for global brands
+        </p>
+      </div>
+
+      {/* Social Icons */}
+      <div className="px-4 pb-4 d-flex gap-1 fs-5" style={{color:'#0056A8'}}>
+        <FaInstagram />
+        <FaFacebookF />
+        <FaYoutube />
+        <FaXTwitter />
+        <FaTiktok />
+      </div>
+    </div>
             </Col>
           ))}
         </Row>

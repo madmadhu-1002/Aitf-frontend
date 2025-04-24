@@ -5,4 +5,16 @@
     transform: translateY(-50%);
     z-index: 10;
   }
+  .textFontMd {
+    font-size: 0.75rem; /* base size */
+  }
 
+  @media (min-width: 512px) {
+    .textFontMd {
+      font-size: 1.75rem;
+    }}
+    @media (min-width: 992px) {
+      .textFontMd {
+        font-size: 2rem;
+      }
+    }

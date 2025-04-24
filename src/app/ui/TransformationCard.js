@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
-const TransformationCard = () => {
+const TransformationCard = ({image, title, subtitle, price}) => {
     const [hovered, setHovered] = useState(false);
   return (
     <>
@@ -20,7 +20,7 @@ const TransformationCard = () => {
               }}
             >
               <Image
-            src="/assets/image 23.png"
+            src={image}
             alt="Audi Competition"
             width={437} // set your preferred width
             height={300} // set your preferred height
@@ -32,12 +32,12 @@ const TransformationCard = () => {
             }}
           />
               <div style={{ padding: '1rem' }}>
-                <h3 style={{ marginBottom: '0.3rem', fontSize: '24px', fontWeight: 700 }}>AUDI Competition</h3>
+                <h3 style={{ marginBottom: '0.3rem', fontSize: '24px', fontWeight: 700 }}>{title}</h3>
                 <p style={{ margin: 0, color: 'gray' }}>
-                  Complete performance upgrade package
+                  {subtitle}
                 </p>
                 <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'space-between' }}>
-                  <strong>AED 45,000</strong>
+                  <strong>{price}</strong>
                   <a href="#" style={{ color: '#007bff', textDecoration: 'none' }}>
                     Learn more..
                   </a>

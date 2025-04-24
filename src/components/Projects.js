@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Image from 'next/image';
 
-const Projects = () => {
+const Projects = ({image}) => {
   
   const [hovered, setHovered] = useState(false);
   return (
@@ -23,7 +23,7 @@ const Projects = () => {
           }}
         >
           <Image
-          src="/assets/image 23.png"
+          src={image}
           alt="Audi Competition"
           width={500} // Replace with actual dimensions or responsive layout
           height={300}

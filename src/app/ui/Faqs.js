@@ -15,12 +15,12 @@ const Faqs = () => {
   };
 
   const faqs = [
-    "What is Lorem Ipsum?",
-    "Why do we use it?",
-    "Where does it come from?",
-    "Where can I get some?",
-    "Is Lorem Ipsum safe to use?",
-    "Can I customize the dummy text?",
+    "What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry?",
+    "Why do we use it Lorem Ipsum is simply dummy text of the printing and typesetting industry?",
+    "Where does it come from Lorem Ipsum is simply dummy text of the printing and typesetting industry?",
+    "Where can I get some Lorem Ipsum is simply dummy text of the printing and typesetting industry?",
+    "Is Lorem Ipsum safe to use Lorem Ipsum is simply dummy text of the printing and typesetting industry?",
+    "Can I customize the dummy text  Lorem Ipsum is simply dummy text of the printing and typesetting industry?",
   ];
 
   return (

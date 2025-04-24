@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const ModificationCard = () => {
+const ModificationCard = ({image}) => {
     
         const [hovered, setHovered] = useState(false);
   return (
@@ -20,7 +20,7 @@ const ModificationCard = () => {
         
       >
         <img
-          src="/assets/image.png"
+          src={image}
           alt="Audi Competition"
           style={{
             width: '100%',
