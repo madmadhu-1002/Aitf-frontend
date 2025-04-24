@@ -5,6 +5,10 @@ import Image from 'next/image';
 import { FaRegLightbulb, FaHandsHelping, FaUsers, FaTwitter, FaLinkedin, FaFacebook, FaDribbble } from 'react-icons/fa';
 import styles from '@/styles/AboutUs.module.css'
 import { Button, Container, Row, Col, Card } from 'react-bootstrap';
+import AOS from "aos";
+import { useEffect } from "react";
+
+
 
 const philosophyPoints = [
   {
@@ -32,9 +36,15 @@ const teamMembers = Array(6).fill({
 });
 
 const AboutUs = () => {
+  useEffect(() => {
+      AOS.init({
+        duration: 1000, // animation duration
+        once: true,     // whether animation should happen only once
+      });
+    }, []);
   return (
     <>
-      <div className="min-w-full flex-shrink-0 position-relative ">
+      <div className="min-w-full flex-shrink-0 position-relative " data-aos='zoom-in'>
         <Image
           src="/assets/about.png"
           width={1467}
@@ -42,9 +52,9 @@ const AboutUs = () => {
           alt="banners"
           layout="responsive"
         />
-        <div className={`${styles.aboutDiv} text-white text-center`}>
-          <h1 className="fw-bold display-6 display-md-5 display-lg-4">Leading the Way in <span className='fs-6 text-primary'>vehicle modifications</span></h1>
-          <h1 className="fw-bold display-6 display-md-5 display-lg-4"><span className='fs-6 text-primary'>and </span> Specialized Conversions</h1>
+        <div className={`${styles.aboutDiv} text-white text-center h-50`}>
+          <h2 className={`${styles.textFontMd} fw-bold`}>Leading the Way in <span className='fs-6 text-primary'>vehicle modifications</span></h2>
+          <h2 className={`${styles.textFontMd} fw-bold`}><span className='fs-6 text-primary'>and </span> Specialized Conversions</h2>
         </div>
         <div className="d-flex justify-content-center">
           <div className={`${styles.aboutButton} text-white text-center`}>
@@ -55,7 +65,7 @@ const AboutUs = () => {
       </div>
       {/* about */}
       <Container fluid className={styles.ambulance}>
-        <Row>
+        <Row data-aos="fade-right">
 
           <Col sm={6} className="d-flex flex-column justify-content-end">
             <div>
@@ -80,12 +90,12 @@ const AboutUs = () => {
         </Row>
       </Container>
       {/* history */}
-      <Container fluid className={styles.ambulance}>
-        <Row>
+      <Container fluid className={`${styles.ambulance} mb-3`}>
+        <Row data-aos="fade-up">
 
 
-          <Col sm={6}>
-            <div className={`${styles.carouselDiv} ms-2 text-dark`} >
+          <Col sm={6} className='order-2 order-sm-1'>
+            <div className={`${styles.carouselDiv} ms-2 text-dark `} >
               <h2 className="fw-bold display-6 display-md-5 display-lg-4">History Of AITF</h2>
               <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
               <p className="fs-6 fs-md-5 fs-lg-4">Our industry experience spans over 65 years. Our expansive footprint and robust network are our greatest strengths.</p>
@@ -96,7 +106,7 @@ const AboutUs = () => {
               </div>
             </div>
           </Col>
-          <Col sm={6} className="d-flex flex-column justify-content-end">
+          <Col sm={6} className="d-flex flex-column justify-content-end order-1 order-sm-2">
             <div>
               <Image
                 src="/assets/miltary1.png"
@@ -111,9 +121,9 @@ const AboutUs = () => {
         </Row>
       </Container>
       {/* case study */}
-      <Container fluid className={`bg-black text-white ${styles.ambulance}`}>
-        <Row>
-          <Col sm={6} className="d-flex flex-column justify-content-end">
+      <Container fluid className={`bg-black p-3 text-white ${styles.ambulance}`}>
+        <Row >
+          <Col sm={5} className="d-flex flex-column justify-content-end">
             <div>
               <Image
                 src="/assets/miltary1.png"
@@ -125,13 +135,13 @@ const AboutUs = () => {
               />
             </div>
           </Col>
-          <Col sm={6}>
+          <Col sm={7}>
             <div className={`${styles.carouselDiv} ms-2 mt-3`} >
               <h2 className="fw-bold display-6 display-md-5 display-lg-4">Nissan Y62</h2>
-              <p className="fs-6 fs-md-5 fs-lg-4">&quot;I chose AWeber because I simply could not find any other provider that offered all the tools I needed under one platform, such as autoresponders, self-hosted sign up forms, and integration with third-party apps. I also love AWeber&#39;s pay-as-you-grow billing scale, which enables companies with smaller mailing lists to have full access to all the robust features AWeber offers without being up-charged.&quot;</p>
+              <p className="fs-4 fs-md-3 fs-lg-2">&quot;I chose AWeber because I simply could not find any other provider that offered all the tools I needed under one platform, such as autoresponders, self-hosted sign up forms, and integration with third-party apps. I also love AWeber&#39;s pay-as-you-grow billing scale, which enables companies with smaller mailing lists to have full access to all the robust features AWeber offers without being up-charged.&quot;</p>
               <div className="d-flex flex-wrap gap-2 mt-3">
-                <Button variant="dark">Read More</Button>
-                <Button variant="primary">Know More</Button>
+                <Button  variant="primary" className='p'>Read More</Button>
+                <Button variant="dark">Know More</Button>
               </div>
             </div>
           </Col>
@@ -145,7 +155,7 @@ const AboutUs = () => {
         <Row className="g-4">
           {philosophyPoints.map((point, index) => (
             <Col md={4} key={index}>
-              <Card className="border-0 h-100">
+              <Card className="border-0 h-100" data-aos='flip-left'>
                 <Card.Body className="p-4 bg-light rounded shadow-sm">
                   <div className="mb-3 d-flex justify-content-center">
                     {point.icon}
@@ -167,7 +177,7 @@ const AboutUs = () => {
         <h2 className="text-center h3 fw-semibold mb-4">Team of Experts</h2>
         <Row className="g-4">
           {teamMembers.map((member, idx) => (
-            <Col md={4} key={idx}>
+            <Col md={4} key={idx} data-aos='fade-up'>
               <Card className="text-center h-100 border-0">
                 <div className="mx-auto mt-3" style={{ width: 120, height: 120 }}>
                   <Image

@@ -9,7 +9,7 @@ const Projects = () => {
   const [hovered, setHovered] = useState(false);
   return (
     <>
-    <Container className="mt-5">
+    <Container className="mt-5" data-aos='flip-left'>
         <div
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}

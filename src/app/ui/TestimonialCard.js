@@ -3,7 +3,7 @@ import React from 'react'
 const TestimonialCard = () => {
   return (
     <>
-    <div style={styles.card}>
+    <div style={styles.card} data-aos="flip-left">
             <div style={styles.header}>
               <div style={styles.userInfo}>
                 <div style={styles.avatar}>

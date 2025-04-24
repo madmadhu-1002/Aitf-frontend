@@ -28,7 +28,8 @@ const Videos = () => {
       </Container>
       <Container className="mt-5">
         <h1 style={{ marginBottom: '0.3rem', fontSize: '32px', fontWeight: 700 }}>Popular Modifications</h1>
-        <Row>
+        <Row data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
           <Col md={3}>
             <ModificationCard />
           </Col>

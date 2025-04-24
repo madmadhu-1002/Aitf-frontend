@@ -55,7 +55,7 @@ const Carousel = () => {
     }, [emblaApi]);
 
     return (
-        <div className="overflow-hidden" ref={emblaRef}>
+        <div className="overflow-hidden" ref={emblaRef} data-aos="zoom-in">
             <div className="flex">
                 {homepage?.sliders?.map((banners, index) => (
                     <div

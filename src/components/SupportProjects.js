@@ -1,12 +1,22 @@
+"use client"
+
 import Image from 'next/image';
 import styles from '@/styles/SupportProject.module.css'
 import Projects from './Projects';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import AOS from "aos";
+import { useEffect } from "react";
 
 const SupportProjects = () => {
+  useEffect(() => {
+        AOS.init({
+          duration: 1000, // animation duration
+          once: true,     // whether animation should happen only once
+        });
+      }, []);
   return (
     <>
-      <div className="min-w-full flex-shrink-0 position-relative ">
+      <div className="min-w-full flex-shrink-0 position-relative " data-aos='zoom-in'>
         <Image
           src="/assets/image 39 (1).png"
           width={1614}

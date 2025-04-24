@@ -4,7 +4,9 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { Form, Button, Row, Col, Container, Card } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter, FaTiktok } from 'react-icons/fa';
-import styles from '@/styles/ContactUs.module.css'
+import styles from '@/styles/ContactUs.module.css';
+import AOS from "aos";
+import { useEffect } from "react";
 
 const cards = [
   {
@@ -65,11 +67,17 @@ const ContactUs = () => {
       alert("There was a problem submitting your message.");
     }
   };
+  useEffect(() => {
+          AOS.init({
+            duration: 1000, // animation duration
+            once: true,     // whether animation should happen only once
+          });
+        }, []);
   return (
     <>
 
 
-      <div className="min-w-full flex-shrink-0 position-relative ">
+      <div className="min-w-full flex-shrink-0 position-relative " data-aos='zoom-in'>
         <Image
           src="/assets/image 51.png"
           width={1614}
@@ -87,7 +95,7 @@ const ContactUs = () => {
       </div>
       <Container fluid className='mt-3 w-100'>
         <Row>
-          <Col sm={6} className='ms-3'>
+          <Col sm={6} className='ms-3' data-aos='fade-right'>
             <div >
               <h3>
                 Contact Us
@@ -114,7 +122,7 @@ const ContactUs = () => {
               />
             </div>
           </Col>
-          <Col>
+          <Col data-aos='zoom-in'>
             <div className="p-4 bg-white shadow rounded" style={{  margin: "0 auto" }}>
               <h4 className="mb-4 fw-bold">Send Us a message</h4>
               <Form onSubmit={handleSubmit}>
@@ -184,13 +192,14 @@ const ContactUs = () => {
       <Container fluid className="my-5">
       <Row className="justify-content-center g-4">
         {cards.map((card, index) => (
-          <Col key={index} sm={4}>
+          <Col key={index} md={4} sm={6} data-aos='flip-left'>
             <Card className={`${styles.customCard} shadow-sm border-0`}>
               <Image
                 src={card.image}
                 width={356}
                 height={278}
                 className=' rounded-top-4'
+                layout='responsive'
                 alt={card.title}
               />
               <Card.Body>

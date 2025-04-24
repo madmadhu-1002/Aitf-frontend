@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev --port 3004 --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 3004",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "@mui/styled-engine-sc": "^7.0.2",
+    "aos": "^2.3.4",
     "axios": "^1.8.4",
     "bootstrap": "^5.3.5",
     "embla-carousel-react": "^8.6.0",
@@ -16,7 +22,8 @@
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.5.0"
+    "react-icons": "^5.5.0",
+    "styled-components": "^6.1.17"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

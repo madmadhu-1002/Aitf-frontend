@@ -1,5 +1,13 @@
 .careerWrapper {
-    background-color: #f9f9f9;
+    background-color: #f6f6f6;
     border-radius: 12px;
+  }
+
+  .careerDiv {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    transform: translateY(-50%);
+    z-index: 10;
   }
   

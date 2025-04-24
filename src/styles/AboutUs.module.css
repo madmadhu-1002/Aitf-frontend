@@ -4,6 +4,12 @@
     right: 5%;
     transform: translateY(-50%);
     z-index: 10;
+    
+  }
+
+  .aboutButton button {
+    font-size: 0.5rem;
+    padding: 0.5rem .5rem;
   }
 
   .aboutDiv {
@@ -12,6 +18,28 @@
     left: 5%;
     transform: translateY(-50%);
     z-index: 10;
+  }
+
+  .textFontMd {
+    font-size: 0.75rem; /* base size */
+  }
+
+  
+  
+  @media (min-width: 512px) {
+    .textFontMd {
+      font-size: 1.75rem;
+    }
+    .aboutButton button {
+      font-size: 1rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .textFontMd {
+      font-size: 2.25rem;
+    }
   }
 
   

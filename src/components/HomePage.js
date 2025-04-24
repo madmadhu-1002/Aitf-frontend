@@ -10,12 +10,22 @@ import Cards from "./Cards";
 import Videos from "@/app/ui/Videos";
 import { useRouter } from 'next/navigation';
 import Faqs from "@/app/ui/Faqs";
+import AOS from "aos";
+import { useEffect } from "react";
+
 
 const HomePage = () => {
+
     const router = useRouter();
     const handleApplyClick = () => {
         router.push('/types-and-generations'); // your dynamic slug path
-      };
+    };
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // animation duration
+            once: true,     // whether animation should happen only once
+        });
+    }, []);
     return (
         <>
             <Carousel />
@@ -50,18 +60,18 @@ const HomePage = () => {
                 </Row>
             </Container>
             {/* About Aitf */}
-            <Container className="mt-3">
+            <Container className="mt-3" data-aos="fade-right">
                 <Row>
                     <Col md={6}>
-                    <div className="w-100">
-                        <Image
-                            src="/assets/image 2.png" // public folder path
-                            alt="Description of image"
-                            width={581}
-                            height={500}
-                            className="rounded-3"
-                            layout="responsive"
-                        />
+                        <div className="w-100">
+                            <Image
+                                src="/assets/image 2.png" // public folder path
+                                alt="Description of image"
+                                width={581}
+                                height={500}
+                                className="rounded-3"
+                                layout="responsive"
+                            />
                         </div>
                     </Col>
                     <Col md={6}>
@@ -84,8 +94,8 @@ const HomePage = () => {
                 <h3>Frequently Asked Questions</h3>
             </div>
             <Faqs />
-            
-            
+
+
         </>
     )
 }

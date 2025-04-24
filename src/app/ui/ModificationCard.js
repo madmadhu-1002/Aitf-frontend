@@ -17,6 +17,7 @@ const ModificationCard = () => {
           marginTop: '2rem',
           marginRight: '2rem'
         }}
+        
       >
         <img
           src="/assets/image.png"

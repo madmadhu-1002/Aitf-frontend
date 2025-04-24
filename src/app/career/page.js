@@ -1,5 +1,9 @@
 import Career from "@/components/Career"
 
+export const metadata = {
+  title: "Career", 
+};
+
 const Page = async () => {
     
     

@@ -11,7 +11,7 @@ const JobCard = () => {
     router.push('/career/graphic-designer'); // your dynamic slug path
   };
   return (
-    <div style={styles.card}>
+    <div style={styles.card} data-aos='fade-up'>
       <div style={styles.header}>
         <span style={styles.title}>Graphic Designers</span>
         <span style={styles.location}> | Hyderabad</span>
