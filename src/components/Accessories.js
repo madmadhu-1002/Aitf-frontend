@@ -23,7 +23,7 @@ const Accessories = () => {
 
 
             </div>
-            <Container fluid className="mb-3 mt-3">
+            <Container fluid className="mb-5 mt-3 ps-4 pe-4 pb-5">
                 <Row className="mb-3 mt-5">
                     <Col>
                         <Form className={`d-flex ms-auto ${styles.customSearchBar}`}>
@@ -34,18 +34,18 @@ const Accessories = () => {
                                 aria-label="Search"
                             />
                             <Button className={styles.searchButton} >
-                                <FaSearch className={`${styles.me1} text-black`} />
+                                <FaSearch className={`${styles.me1} text-black `} />
                             </Button>
                         </Form>
                     </Col>
                 </Row>
-                <Row className="g-3">
+                <Row className="g-0">
                     {/* Left Column */}
-                    <Col sm={3} className={`${styles.carListBg} me-sm-3`}>
-                        <h3 className="text-primary fs-4">Vehicle Modifications</h3>
-                        <Row className="g-2">
+                    <Col sm={3} className="me-sm-3">
+                        <Row className={`${styles.carListBg} g-2 p-2 rounded-3`}>
+                        <h3 className="text-primary fs-5 pt-4 py-3">Vehicle Modification</h3>
                             <Col lg={6} >
-                                <div className="d-flex rounded-2 flex-column justify-content-center text-center h-100 bg-white">
+                                <div className="d-flex rounded-2 flex-column justify-content-center p-0 text-center h-100 bg-white" >
                                     <Form.Check
                                         type="checkbox"
                                         id="1"
@@ -54,15 +54,15 @@ const Accessories = () => {
                                     />
                                     <Image
                                         src="/assets/Mercedes-G-63-Menu 1.png"
-                                        width={145}
-                                        height={65}
+                                        width={165}
+                                        height={100}
                                         alt="4wd Recovery & Safety"
                                     />
-                                    <p className="fs-6 hover-text-primary">4wd Recovery & Safety</p>
+                                    <p className="fs-6 hover-text-primary mt-auto">4wd Recovery & Safety</p>
                                 </div>
                             </Col>
                             <Col lg={6}>
-                                <div className="d-flex rounded-2 flex-column justify-content-center text-center h-100 bg-white">
+                                <div className="d-flex p-0  rounded-2 flex-column justify-content-center text-center h-100 bg-white">
                                     <Form.Check
                                         type="checkbox"
                                         id="2"
@@ -71,15 +71,15 @@ const Accessories = () => {
                                     />
                                     <Image
                                         src="/assets/recovery-safety.png"
-                                        width={145}
-                                        height={65}
+                                        width={128}
+                                        height={97}
                                         alt="4wd Recovery & Safety"
                                     />
                                     <p className="fs-6 hover-text-primary">4wd Recovery & Safety</p>
                                 </div>
                             </Col>
                             <Col lg={6}>
-                                <div className="d-flex rounded-2 flex-column justify-content-center text-center h-100 bg-white">
+                                <div className="d-flex p-0  rounded-2 flex-column justify-content-center text-center h-100 bg-white">
                                     <Form.Check
                                         type="checkbox"
                                         id="3"
@@ -88,15 +88,15 @@ const Accessories = () => {
                                     />
                                     <Image
                                         src="/assets/modif5.png"
-                                        width={145}
-                                        height={65}
+                                        width={165}
+                                        height={100}
                                         alt="4wd Recovery & Safety"
                                     />
                                     <p className="fs-6 hover-text-primary">4wd Recovery & Safety</p>
                                 </div>
                             </Col>
                             <Col lg={6} >
-                                <div className="d-flex rounded-2 flex-column justify-content-center text-center h-100 bg-white">
+                                <div className="d-flex p-0  rounded-2 flex-column justify-content-center text-center h-100 bg-white">
                                     <Form.Check
                                         type="checkbox"
                                         id="4"
@@ -113,7 +113,7 @@ const Accessories = () => {
                                 </div>
                             </Col>
                             <Col lg={6}>
-                                <div className="d-flex rounded-2 flex-column justify-content-center text-center h-100 bg-white">
+                                <div className="d-flex p-0  rounded-2 flex-column justify-content-center text-center h-100 bg-white">
                                     <Form.Check
                                         type="checkbox"
                                         id="5"
@@ -130,7 +130,7 @@ const Accessories = () => {
                                 </div>
                             </Col>
                             <Col lg={6}>
-                                <div className="d-flex rounded-2 flex-column justify-content-center text-center h-100 bg-white">
+                                <div className="d-flex p-0  rounded-2 flex-column justify-content-center text-center h-100 bg-white">
                                     <Form.Check
                                         type="checkbox"
                                         id="6"
@@ -150,34 +150,34 @@ const Accessories = () => {
                     </Col>
 
                     {/* Right Column */}
-                    <Col className={styles.carListBg}>
-                        <Row>
-                            <Col lg={4} md={6} sm={12}>
+                    <Col className="pb-5">
+                        <Row className="g-3">
+                            <Col lg={4} md={6} sm={12} className="p-0">
                                 <AccessoryCard image={"/assets/image 41.png"} newArrival={true}/>
                             </Col>
-                            <Col lg={4} md={6} sm={12}>
+                            <Col lg={4} md={6} sm={12} className="p-0">
                                 <AccessoryCard image={"/assets/accessory2.png"} newArrival={true}/>
                             </Col>
-                            <Col lg={4} md={6} sm={12}>
+                            <Col lg={4} md={6} sm={12} className="p-0">
                                 <AccessoryCard image={"/assets/accessory4.png"} newArrival={true}/>
                             </Col>
-                            <Col lg={4} md={6} sm={12}>
-                                <AccessoryCard image={"/assets/image 41.png"} />
+                            <Col lg={4} md={6} sm={12} className="p-0">
+                                <AccessoryCard image={"/assets/image 41.png"} newArrival={true}/>
                             </Col>
-                            <Col lg={4} md={6} sm={12}>
-                                <AccessoryCard image={"/assets/accessory2.png"} />
+                            <Col lg={4} md={6} sm={12} className="p-0">
+                                <AccessoryCard image={"/assets/accessory2.png"} newArrival={true}/>
                             </Col>
-                            <Col lg={4} md={6} sm={12}>
-                                <AccessoryCard image={"/assets/accessory4.png"} />
+                            <Col lg={4} md={6} sm={12} className="p-0">
+                                <AccessoryCard image={"/assets/accessory4.png"} newArrival={true}/>
                             </Col>
-                            <Col lg={4} md={6} sm={12}>
-                                <AccessoryCard image={"/assets/image 41.png"} />
+                            <Col lg={4} md={6} sm={12} className="p-0">
+                                <AccessoryCard image={"/assets/image 41.png"} newArrival={true}/>
                             </Col>
-                            <Col lg={4} md={6} sm={12}>
-                                <AccessoryCard image={"/assets/accessory2.png"} />
+                            <Col lg={4} md={6} sm={12} className="p-0">
+                                <AccessoryCard image={"/assets/accessory2.png"} newArrival={true}/>
                             </Col>
-                            <Col lg={4} md={6} sm={12}>
-                                <AccessoryCard image={"/assets/accessory4.png"} />
+                            <Col lg={4} md={6} sm={12} className="p-0">
+                                <AccessoryCard image={"/assets/accessory4.png"} newArrival={true}/>
                             </Col>
 
                         </Row>

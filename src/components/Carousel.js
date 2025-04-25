@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import styles from '@/styles/Carousel.module.css';
 import { useRouter } from 'next/navigation';
+import AOS from "aos";
 
 const homepage = {
     "sliders": [
@@ -29,11 +30,11 @@ const homepage = {
 }
 const Carousel = () => {
     const router = useRouter();
-    
+
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
     const handleApplyClick = () => {
         router.push('/car-list'); // your dynamic slug path
-      };
+    };
     useEffect(() => {
         if (!emblaApi) return;
 
@@ -53,7 +54,12 @@ const Carousel = () => {
 
         return () => clearInterval(autoplay);
     }, [emblaApi]);
-
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // animation duration
+            once: true,     // whether animation should happen only once
+        });
+    }, []);
     return (
         <div className="overflow-hidden" ref={emblaRef} data-aos="zoom-in">
             <div className="flex">

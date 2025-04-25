@@ -83,10 +83,10 @@ const JobDescription = () => {
             </div>
     
           </div>
-      <Container fluid className={`py-5 ${styles.careerWrapper}`}>
+      <Container fluid className={`p-5 ${styles.careerWrapper}`}>
         <Row>
           <Col md={6}>
-            <h2 className="text-primary fw-bold fs-3">Graphic Designers <span className="text-muted fs-5">Hyderabad</span></h2>
+            <h2 className="text-primary fw-bold fs-3">Graphic Designers <span className="text-muted fs-5 ps-4">Hyderabad</span></h2>
             <p>Software Engineering Project</p>
             <p><strong className='text-primary'>Role:</strong> Design great visual and impacted the website.</p>
             <p><strong className='text-primary'>Business Area:</strong> Corporate Business Communication</p>
@@ -96,7 +96,7 @@ const JobDescription = () => {
             </p>
           </Col>
           <Col md={6}>
-          <div className='w-75 ps-5'>
+          <div className='w-75 ps-5 ms-auto'>
             <Image
               src="/assets/image 11.png"
               width={470}
@@ -112,7 +112,7 @@ const JobDescription = () => {
           <Col sm={6}>
             {!submitted ? (
               <form className="row g-3 mt-4" onSubmit={handleSubmit} encType="multipart/form-data">
-                <h4 className="text-primary">Submit Your Application <span className="d-block border-bottom border-primary mt-1 w-50" ></span></h4>
+                <h4 className="text-primary fs-2">Submit Your Application <span className="d-block border-bottom border-primary mt-1 w-50" ></span></h4>
                 
                 <div className="col-md-6">
                   <TextField id="standard-basic" label="First Name" variant="standard" name="first_name" className="form-control" required onChange={handleChange} sx={{ backgroundColor: '#F6F6F6' }} />

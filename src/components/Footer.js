@@ -58,11 +58,11 @@ const Footer = () => {
                                         <h3>Explore</h3>
                                         <nav className="nav flex-column fs-6">
                                             <Link href="/" className="nav-link p-1">Home</Link>
-                                            <Link href="/about" className="nav-link p-1">About Us</Link>
-                                            <Link href="/services" className="nav-link p-1">Services</Link>
-                                            <Link href="/blog" className="nav-link p-1">Blog and News</Link>
+                                            <Link href="/about-us" className="nav-link p-1">About Us</Link>
+                                            <Link href="/support-projects" className="nav-link p-1">Support & Projects</Link>
+                                            <Link href="/gallery" className="nav-link p-1">Gallery</Link>
                                             <Link href="/career" className="nav-link p-1">Career</Link>
-                                            <Link href="/contact" className="nav-link p-1">Contact Us</Link>
+                                            <Link href="/contact-us" className="nav-link p-1">Contact Us</Link>
                                         </nav>
 
                                     </Col>

@@ -7,7 +7,7 @@ import styles from '@/styles/Header.module.css'
 import { FaSearch } from 'react-icons/fa'; 
 
 const Header = () => (
-  <Navbar expand="lg" bg="white" variant="light">
+  <Navbar expand="lg" bg="white" variant="light" style={{ boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}>
     <Container fluid>
       <Navbar.Brand as={Link} href="/">
         <Image

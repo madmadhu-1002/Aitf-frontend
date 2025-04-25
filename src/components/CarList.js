@@ -18,7 +18,7 @@ const cars = [
 ];
 
 const modifications = [
-  { name: 'Ambulance', image: '/assets/carlist1.png', width: 145, height: 65 },
+  { name: 'Ambulances', image: '/assets/carlist1.png', width: 145, height: 75 },
   { name: 'Armoring', image: '/assets/carlist2.png', width: 165, height: 100 },
   { name: 'Commmercial', image: '/assets/carlist3.png', width: 150, height: 105 },
 ];
@@ -31,9 +31,9 @@ const CarList = () => {
     <>
       <Container fluid className="mb-3 mt-3 pe-4 ps-5">
 
-        <Row className="g-3">
+        <Row className="g-1">
           {/* Left Column */}
-          <Col sm={4} className={`${styles.carListBg} me-sm-3`}>
+          <Col sm={4} className={`${styles.carListBg} me-sm-3 p-3 rounded-3`}>
             <h2 className="fs-4 text-primary mt-4 mb-4">Vehicle Modification</h2>
             <Row className="g-2 mb-3 ">
             {modifications.map((modification, i) => (
@@ -51,7 +51,7 @@ const CarList = () => {
                       height={modification.height}
                       alt="ambulance"
                     />
-                    <p className="fs-6 hover-text-primary p-1">{modification.name}</p>
+                    <p className="fs-6 hover-text-primary p-1 mt-auto">{modification.name}</p>
                   </div>
                 </Col>
               ))}
@@ -59,7 +59,7 @@ const CarList = () => {
           </Col>
 
           {/* Right Column */}
-          <Col className={styles.carListBg}>
+          <Col className={`${styles.carListBg} rounded-3`}>
             <h2 className="ps-4 pt-4">Ambulances</h2>
             <Row className="g-2">
             {cars.map((image, i) => (

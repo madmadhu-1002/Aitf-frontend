@@ -52,12 +52,15 @@ const GeneralSpecs = () => {
 
   return (
     <div style={styles.wrapper}>
-      <h2 style={styles.heading}>Lorem Ipsum</h2>
-      <p style={styles.description}>
+      <h2 className='fw-bold'>Lorem Ipsum</h2>
+      <p style={styles.description} >
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
       </p>
 
-      <div style={styles.tabContainer}>
+      
+
+      <div style={styles.tableBox}>
+      <div style={styles.tabContainer} className='ms-auto me-auto'>
         {['general', 'interior', 'exterior', 'conversion'].map((tab) => (
           <button
             key={tab}
@@ -74,8 +77,8 @@ const GeneralSpecs = () => {
           </button>
         ))}
       </div>
-
-      <div style={styles.tableBox}>{renderSpecs()}</div>
+        {renderSpecs()}
+        </div>
     </div>
   );
 };
@@ -93,7 +96,7 @@ const styles = {
   description: {
     fontWeight: '400',
     fontSize: '16px',
-    lineHeight: '1.6',
+    lineHeight: '1.8',
     color: '#1E1E1E',
     margin: '10px 0 30px 0',
   },
@@ -101,7 +104,8 @@ const styles = {
     display: 'flex',
     gap: '15px',
     flexWrap: 'wrap',
-    marginBottom: '20px'
+    marginBottom: '20px',
+     justifyContent: 'center',
   },
   tab: {
     padding: '10px 20px',

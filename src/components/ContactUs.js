@@ -77,13 +77,14 @@ const ContactUs = () => {
     <>
 
 
-      <div className="min-w-full flex-shrink-0 position-relative " data-aos='zoom-in'>
+      <div className="min-w-full flex-shrink-0 position-relative p-2" data-aos='zoom-in'>
         <Image
           src="/assets/image 51.png"
           width={1614}
           height={1076}
           alt="banners"
           layout="responsive"
+          className='rounded-3'
         />
         <div className="d-flex justify-content-center">
           <div className={`${styles.contactDiv} text-white text-center`}>
@@ -93,18 +94,18 @@ const ContactUs = () => {
         </div>
 
       </div>
-      <Container fluid className='mt-3 w-100'>
+      <Container fluid className='p-5 w-100 main-bg'>
         <Row>
-          <Col sm={6}  data-aos='fade-right'>
+          <Col sm={5}  data-aos='fade-right'>
             <div >
-              <h3>
+              <h2>
                 Contact Us
-              </h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              </h2>
+              <p className='fs-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
             <div>
               <h3>Follow us</h3>
-              <div style={{ display: 'flex', gap: '10px', fontSize: '1.5rem' }}>
+              <div style={{ display: 'flex', gap: '15px', fontSize: '1.5rem' }}>
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
                 <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                 <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
@@ -123,7 +124,7 @@ const ContactUs = () => {
             </div>
           </Col>
           <Col data-aos='zoom-in'>
-            <div className="p-4 bg-white shadow rounded" style={{  margin: "0 auto" }}>
+            <div className="p-4 bg-white shadow rounded-4" style={{  margin: "0 auto" }}>
               <h4 className="mb-4 fw-bold">Send Us a message</h4>
               <Form onSubmit={handleSubmit}>
                 <Row className="mb-3">
@@ -157,43 +158,42 @@ const ContactUs = () => {
                       onChange={handleChange} placeholder="Email ID" />
                     </Form.Group>
                   </Col>
+                  <Col sm={12}>
+                    <Form.Group controlId="address" className="mb-3">
+                      <Form.Control type="text" placeholder="Address" />
+                    </Form.Group>
+                  </Col>
+                  <Col sm={12}>
+                    <Form.Group controlId="message" className="mb-3">
+                      <Form.Control as="textarea" rows={4} placeholder="Message" />
+                    </Form.Group>
+                  </Col>
+                  <Col sm={8}>
+                    <Form.Group controlId="privacy" className="mb-3">
+                      <Form.Check
+                        type="checkbox"
+                        label="I agree to the privacy statement and understand how my personal data will be processed."
+                      />
+                    </Form.Group>
+                  </Col>
+                  <Col sm={4}>
+                    <Button type="submit" variant="primary" className="w-100 rounded-5 fs-5 fw-bold">
+                      Get In touch
+                    </Button>
+                  </Col>
                 </Row>
 
-                <Form.Group controlId="address" className="mb-3">
-                  <Form.Control type="text" name="address"
-                    value={formData.address}
-                    onChange={handleChange} placeholder="Address" />
-                </Form.Group>
-
-                <Form.Group controlId="message" className="mb-3">
-                  <Form.Control as="textarea" rows={4} name="message"
-                    value={formData.message}
-                    onChange={handleChange} placeholder="Message" />
-                </Form.Group>
-
-                <Form.Group controlId="privacy" className="mb-3">
-                  <Form.Check
-                    type="checkbox"
-                    name="is_checked"
-                    checked={formData.is_checked}
-                    onChange={handleChange}
-                    label="I agree to the privacy statement and understand how my personal data will be processed."
-                  />
-                </Form.Group>
-
-                <Button type="submit" variant="primary" className="w-100">
-                  Get In touch
-                </Button>
+                
               </Form>
             </div>
           </Col>
         </Row>
       </Container>
-      <Container fluid className="my-5">
-      <Row className="justify-content-center g-4">
+      <Container fluid className="p-5 main-bg">
+      <Row className="justify-content-center g-4 ">
         {cards.map((card, index) => (
           <Col key={index} md={4} sm={6} data-aos='flip-left'>
-            <Card className={`${styles.customCard} shadow-sm border-0`}>
+            <Card className={`${styles.customCard} shadow-sm border-0 h-100 p-2`}>
               <Image
                 src={card.image}
                 width={356}

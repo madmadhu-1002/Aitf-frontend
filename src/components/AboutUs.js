@@ -14,23 +14,24 @@ import {
   FaXTwitter,
   FaTiktok,
 } from "react-icons/fa6";
+import ImageGrid from '@/app/ui/ImageGrid';
 
 
 
 const philosophyPoints = [
   {
     title: 'Our Vision',
-    description: 'We foster a culture that embraces creativity and forward-thinking solutions.',
+    description: 'A Globally Recognized business group creating customers for life',
     img: '/assets/vision.png',
   },
   {
     title: 'Our Mission',
-    description: 'We believe in the power of teamwork and strategic partnerships.',
+    description: 'We are committed to diversity and innovatively delivering world-class products and services through empowered employees and creating value for our stakeholders.',
     img: '/assets/mission.png',
   },
   {
     title: 'Our Values',
-    description: 'Our employees and clients are at the heart of everything we do.',
+    description: 'Integrity, Ownership, Passion and Excellence',
     img: '/assets/values.png',
   },
 ];
@@ -71,13 +72,13 @@ const AboutUs = () => {
 
       </div>
       {/* about */}
-      <Container fluid className={styles.ambulance}>
+      <Container fluid className={`${styles.ambulance} p-5 main-bg`}>
         <Row data-aos="fade-right" className='mt-5'>
 
           <Col sm={6} className="d-flex flex-column justify-content-end">
             <div>
               <Image
-                src="/assets/miltary1.png"
+                src="/assets/about1.png"
                 width={1920}
                 height={860}
                 alt="ambulance"
@@ -97,13 +98,13 @@ const AboutUs = () => {
         </Row>
       </Container>
       {/* history */}
-      <Container fluid className={`${styles.ambulance} mb-3`}>
+      <Container fluid className={`${styles.ambulance} p-5 main-bg`}>
         <Row data-aos="fade-up">
 
 
           <Col sm={6} className='order-2 order-sm-1'>
             <div className={`${styles.carouselDiv} ms-2 text-dark `} >
-              <h2 className="fw-bold display-6 display-md-5 display-lg-4" style={{ fontSize: '48px', fontWeight: '700' }}>History Of AITF</h2>
+              <h2 className="fw-bold display-6 display-md-5 display-lg-4 text-primary" style={{ fontSize: '48px', fontWeight: '700' }}>History Of AITF</h2>
               <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
               <p className="fs-6 fs-md-5 fs-lg-4">Our industry experience spans over 65 years. Our expansive footprint and robust network are our greatest strengths.</p>
               <p className="fs-6 fs-md-5 fs-lg-4">Guided by a corporate vision to be a globally recognized business group that creates lifelong customer relationships, Bahwan International Group boasts an impressive portfolio of brands, including Suzuki, Changan, Foton, BAIC, Iveco, CASE, Terex, Wacker Neuson, and Topcon, among many others.</p>
@@ -128,9 +129,10 @@ const AboutUs = () => {
         </Row>
       </Container>
       {/* case study */}
-      <h2 className=" display-6 display-md-5 display-lg-4 mt-5" style={{ marginLeft: '20px', fontSize: '48px', fontWeight: '600' }}>Case Study</h2>
-      <Container fluid className={`bg-black text-white  ${styles.ambulance}`}>
-        <Row >
+      
+      <Container fluid className={`border-bottom border-black text-white p-3 main-bg  ${styles.ambulance}`}>
+      <h2 className=" display-6 display-md-5 display-lg-4 mt-3 mb-4 text-black" style={{ marginLeft: '20px', fontSize: '54px', fontWeight: '600',  }}>Case Study</h2>
+        <Row className='bg-black'>
           <Col sm={5} className="d-flex flex-column justify-content-end">
             <div>
               <Image className='pt-2'
@@ -145,8 +147,8 @@ const AboutUs = () => {
           <Col sm={7}>
             <div className={`${styles.carouselDiv} ms-2 mt-3 mb-3`} >
               <h2 className="fw-bold display-6 display-md-5 display-lg-4" style={{ marginRight: '20px', fontSize: '24px !important', fontWeight: '400' }}>Nissan Y62</h2>
-              <p className="fs-6 fs-md-5 fs-lg-4" style={{ marginRight: '20px', fontSize: '24px !important', fontWeight: '400' }} >&quot;I chose AWeber because I simply could not find any other provider that offered all the tools I needed under one platform, such as autoresponders, self-hosted sign up forms, and integration with third-party apps. I also love AWeber&apos;s pay-as-you-grow billing scale, which enables companies with smaller mailing lists to have full access to all the robust features AWeber offers without being up-charged.&quot;</p>
-              <div className="d-flex flex-wrap gap-2 mt-3 mb-3">
+              <p className="fs-4 fs-md-5 fs-lg-4" style={{ marginRight: '20px',  fontWeight: '400' }} >&quot;I chose AWeber because I simply could not find any other provider that offered all the tools I needed under one platform, such as autoresponders, self-hosted sign up forms, and integration with third-party apps. I also love AWeber&apos;s pay-as-you-grow billing scale, which enables companies with smaller mailing lists to have full access to all the robust features AWeber offers without being up-charged.&quot;</p>
+              <div className="d-flex flex-wrap gap-2 pt-5">
                 <Button className={`${styles.btn2}`}>Read More</Button>
                 <Button className={`${styles.btn3}`}>Know More</Button>
               </div>
@@ -154,10 +156,13 @@ const AboutUs = () => {
           </Col>
         </Row>
       </Container>
+      {/* our upgraded services */}
+      
+      <ImageGrid />
       {/* philosophy */}
-      <section className="bg-white">
-      <Container className="py-5 text-center">
-        <h2 className="fw-semibold mb-4">Our Philosophy</h2>
+      <section className="main-bg border-bottom border-top border-black">
+      <Container className="py-5 text-center ">
+        <h2 className="fw-semibold mb-4 fs-1 p-4">Our Philosophy</h2>
         <Row className="g-4">
           {philosophyPoints.map((point, index) => (
             <Col md={4} key={index}>
@@ -179,11 +184,11 @@ const AboutUs = () => {
       {/* our team */}
       <section className="py-5 bg-light">
       <Container>
-        <h2 className="text-center h3 fw-semibold mb-4" style={{fontSize:'40px', fontWeight:'600'}}>Team of Experts</h2>
+        <h2 className="text-center h3 fw-semibold pb-5" style={{fontSize:'40px', fontWeight:'600'}}>Team of Experts</h2>
         <Row className="g-4">
           {teamMembers.map((member, idx) => (
             <Col lg={4} md={6} key={idx} data-aos='fade-up'>
-              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 font-sans mb-4">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200 font-sans mb-4 rounded-4">
       {/* Top Image */}
       <div className="w-100 position-relative" style={{ height: "250px" }}>
         <Image
@@ -224,6 +229,7 @@ const AboutUs = () => {
         </Row>
       </Container>
     </section>
+    
     </>
   )
 }

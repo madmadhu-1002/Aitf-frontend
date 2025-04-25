@@ -15,7 +15,7 @@ const AccessoryCard = ({ image,newArrival=false }) => {
     };
     return (
         <>
-            <Container className="mt-5">
+            <Container >
 
                 <div
                     onMouseEnter={() => setHovered(true)}

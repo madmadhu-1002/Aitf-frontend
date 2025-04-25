@@ -3,14 +3,13 @@
 import React from 'react'
 import styles from '@/styles/Career.module.css'
 import JobCard from '@/app/ui/JobCard'
-import { Container, Row, Col, Button , Form} from 'react-bootstrap'
+import { Container, Row, Col, Button , Form, InputGroup} from 'react-bootstrap'
 import Image from 'next/image'
 import AOS from "aos";
 import { useEffect } from "react";
 import { Box, Pagination } from '@mui/material';
-import SearchOnly from '@/app/ui/Search'
 import { FaSearch } from 'react-icons/fa'; 
-import { LuSettings2 } from "react-icons/lu";
+import { LuSlidersHorizontal } from "react-icons/lu";
 
 
 
@@ -39,30 +38,38 @@ const Career = () => {
         </div>
 
       </div>
-      <Container fluid className='mt-3'>
-        <Row>
-          <Col>
-            <h2 className={`text-primary fw-bold ${styles.montserrat}`}>Join The Team</h2>
+      <Container fluid className={`${styles.carListBg} px-5 py-4`}>
+      <Row className="align-items-center justify-content-between">
+          {/* Left: Heading */}
+          <Col xs="auto">
+            <h2 className="fw-bold m-0" style={{ color: '#0056A8', fontSize: '40px', fontWeight: 700 }}>Join The Team</h2>
           </Col>
-          <Col className="d-flex justify-content-end align-items-center">
-          <div className="d-flex align-items-center gap-3">
-          <Form className={`d-flex ${styles.customSearchBar}`}>
-          <Form.Control
-            type="text"
-            placeholder="Search by role"
-            className={styles.searchInput}
-            aria-label="Search"
-          />
-          <Button className={styles.searchButton } >
-            <FaSearch className={`${styles.me1} text-black`} /> 
-          </Button>
-        </Form>
-        <p className="mb-0 d-flex align-items-center gap-1">Filter <LuSettings2 /></p>
-        </div>
+
+          {/* Right: Search + Filter */}
+          <Col xs="auto" className="d-flex align-items-center gap-3">
+            {/* Search Box */}
+            <InputGroup className="rounded-pill overflow-hidden" style={{ border: '1px solid #048EFF', color:'#505050', fontSize:'14px', fontWeight:500 }}>
+              <Form.Control
+                type="text"
+                placeholder="Search by role.."
+                className="border-0 shadow-none ps-3"
+                style={{ minWidth: '240px' }}
+              />
+              <Button variant="light" className="border-0 pe-3">
+                <FaSearch style={{color:'#505050', fontSize:'20px', paddingBottom:'5px'}} />
+              </Button>
+            </InputGroup>
+
+
+            {/* Filter Icon */}
+            <span className=" d-flex align-items-center" style={{ fontSize:'16px', color:'#6C6C6C', fontWeight:500 }}>
+              Filter <LuSlidersHorizontal className="text-black ms-2 fs-5" />
+            </span>
+
           </Col>
         </Row>
       </Container>
-      <Container fluid className='mt-3 mb-3'>
+      <Container fluid className={`${styles.carListBg} mb-3 px-5 pb-5`}>
         <Row className='g-3'>
           <Col lg={4} md={6}>
             <JobCard />

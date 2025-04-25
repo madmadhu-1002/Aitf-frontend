@@ -6,17 +6,17 @@ import TechnicalSpecs from '@/app/ui/TechnicalSpecs';
 import { Container, Row, Col } from "react-bootstrap"
 
 const slides = [
-  '/assets/image 1.png',
-  '/assets/image 1.png',
-  '/assets/image 1.png',
-  '/assets/image 1.png',
+  '/assets/modif6.png',
+  '/assets/modif6.png',
+  '/assets/modif6.png',
+  '/assets/modif6.png',
 ];
 
 const CarSpecs = () => {
   return (
     <>
-      <Row>
-        <Col>
+      <Row className='w-100 p-5 mb-3'>
+        <Col sm={6}>
         <EmblaCarouselWithThumbnails slides={slides} />
         </Col>
         <Col>

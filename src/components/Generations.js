@@ -13,8 +13,8 @@ const Generations = () => {
     return (
         <>
         <Container fluid className={styles.ambulance}>
-            <Row>
-                <Col sm={6}>
+            <Row className="h-100">
+                <Col sm={6} className="d-flex align-items-center">
                 <div className={`${styles.carouselDiv} ms-2 text-white`} >
                     <h2 className="fw-bold display-6 display-md-5 display-lg-4">Ambulance</h2>
                     <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
@@ -22,7 +22,7 @@ const Generations = () => {
                 </div>
                 </Col>
                 <Col sm={6} className="d-flex flex-column justify-content-end">
-                <div>
+                <div className="mt-auto">
                 <Image
                     src="/assets/ambulance1.png"
                     width={1920}
@@ -36,8 +36,8 @@ const Generations = () => {
             </Row>
         </Container>
         <Container fluid className={styles.armoring}>
-            <Row>
-                <Col sm={6}>
+            <Row className="h-100">
+                <Col sm={6} className="d-flex align-items-center">
                 <div className={`${styles.carouselDiv} ms-2 text-white`} >
                     <h2 className="fw-bold display-6 display-md-5 display-lg-4">Armoring</h2>
                     <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
@@ -59,7 +59,7 @@ const Generations = () => {
             </Row>
         </Container>
         <Container fluid className={styles.commercial}>
-            <Row>
+            <Row className="h-100">
                 
                 <Col sm={6} className="d-flex flex-column justify-content-end">
                 <div>
@@ -73,7 +73,7 @@ const Generations = () => {
                 />
                 </div>
                 </Col>
-                <Col sm={6}>
+                <Col sm={6} className="d-flex align-items-center">
                 <div className={`${styles.carouselDiv} ms-2 text-white`} >
                     <h2 className="fw-bold display-6 display-md-5 display-lg-4">Commercial & Multiutility Vehicles</h2>
                     <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
@@ -83,8 +83,8 @@ const Generations = () => {
             </Row>
         </Container>
         <Container fluid className={styles.defence}>
-            <Row>
-                <Col sm={6}>
+            <Row className="h-100">
+                <Col sm={6} className="d-flex align-items-center">
                 <div className={`${styles.carouselDiv} ms-2 text-white`} >
                     <h2 className="fw-bold display-6 display-md-5 display-lg-4">Defence Vehicles</h2>
                     <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
@@ -106,14 +106,14 @@ const Generations = () => {
             </Row>
         </Container>
         <Container fluid className={styles.mining}>
-            <Row>
+            <Row className="h-100">
                 
                 <Col sm={6} className="d-flex flex-column justify-content-end">
                 <div>
                 
                 </div>
                 </Col>
-                <Col sm={6}>
+                <Col sm={6} className="d-flex align-items-center">
                 <div className={`${styles.carouselDiv} ms-2 text-white`} >
                     <h2 className="fw-bold display-6 display-md-5 display-lg-4">Mining Vehicles</h2>
                     <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
@@ -123,8 +123,8 @@ const Generations = () => {
             </Row>
         </Container>
         <Container fluid className={styles.mobile}>
-            <Row>
-                <Col sm={6}>
+            <Row className="h-100">
+                <Col sm={6} className="d-flex align-items-center">
                 <div className={`${styles.carouselDiv} ms-2 text-white`} >
                     <h2 className="fw-bold display-6 display-md-5 display-lg-4">Mobile Workshop</h2>
                     <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
@@ -146,7 +146,7 @@ const Generations = () => {
             </Row>
         </Container>
         <Container fluid className={styles.police}>
-            <Row>
+            <Row className="h-100">
                 
                 <Col sm={6} className="d-flex flex-column justify-content-end">
                 <div>
@@ -160,7 +160,7 @@ const Generations = () => {
                 />
                 </div>
                 </Col>
-                <Col sm={6}>
+                <Col sm={6} className="d-flex align-items-center">
                 <div className={`${styles.carouselDiv} ms-2 text-white`} >
                     <h2 className="fw-bold display-6 display-md-5 display-lg-4">Police Vehicles</h2>
                     <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>
@@ -170,7 +170,7 @@ const Generations = () => {
             </Row>
         </Container>
         <Container fluid className={styles.vip}>
-            <Row>
+            <Row className="h-100">
                 
                 <Col sm={6} className="d-flex flex-column justify-content-end">
                 <div>
@@ -184,7 +184,7 @@ const Generations = () => {
                 />
                 </div>
                 </Col>
-                <Col sm={6}>
+                <Col sm={6} className="d-flex align-items-center">
                 <div className={`${styles.carouselDiv} ms-2 text-white`} >
                     <h2 className="fw-bold display-6 display-md-5 display-lg-4">VIP Conversion</h2>
                     <p className="fs-6 fs-md-5 fs-lg-4">Al Ihassan Trading FZCO. (AITF) is a one stop solution for all your automotive needs. We offer an exclusive tailored made solution to match our customer’s requirement. Equipped with vast experience and professional expertise, our sales and service staff are ready to tailor-make solutions that meet individual requirement and undertake any Automobile related projects.</p>

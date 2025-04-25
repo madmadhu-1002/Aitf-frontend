@@ -12,10 +12,9 @@ const JobCard = () => {
   };
   return (
     <div style={styles.card} data-aos='fade-up'>
-      <div style={styles.header}>
-        <span style={styles.title}>Graphic Designers</span>
-        <span style={styles.location}> | Hyderabad</span>
-      </div>
+      <div className="fw-semibold fs-6 text-dark">
+  <span className='fs-4 text-primary'>Graphics Designers </span><span className="mx-1">|</span><span className='fs-6 fw-light'> Hyderabad</span>
+</div>
  
       <p style={styles.project}>Software Engineering Project</p>
  
@@ -36,7 +35,7 @@ const JobCard = () => {
         <span style={styles.posted}>Posted 2 days ago</span>
         <div style={styles.actions}>
           <FaShareAlt style={{ color: '#0096ff', marginRight: '10px' }} />
-          <button style={styles.button} onClick={handleApplyClick}>Apply Now</button>
+          <button style={styles.button} onClick={handleApplyClick} className='px-4'>Apply Now</button>
         </div>
       </div>
     </div>
@@ -57,6 +56,8 @@ const styles = {
   },
   header: {
     marginBottom: '5px',
+    display: 'flex',
+    alignItems: 'center',
   },
   title: {
     color: '#0056A8',

@@ -30,6 +30,10 @@ body {
   
 }
 
+.main-bg{
+  background-color: #F6F6F6;
+}
+
 .accordion-button{
   background-color: #F5FAFF !important;
 }

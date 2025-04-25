@@ -16,13 +16,14 @@ const SupportProjects = () => {
       }, []);
   return (
     <>
-      <div className="min-w-full flex-shrink-0 position-relative " data-aos='zoom-in'>
+      <div className="min-w-full flex-shrink-0 position-relative p-2" data-aos='zoom-in'>
         <Image
           src="/assets/image 39 (1).png"
           width={1614}
           height={1076}
           alt="banners"
           layout="responsive"
+          className='rounded-3'
         />
         <div className="d-flex justify-content-center">
           <div className={`${styles.projectsDiv} text-white text-center`}>
@@ -32,27 +33,27 @@ const SupportProjects = () => {
         </div>
 
       </div>
-      <Container fluid>
-        <h1 style={{ marginBottom: '0.3rem', fontSize: '36px', fontWeight: 700, paddingLeft:'24px' }}>Projects</h1>
+      <Container fluid className={` ${styles.carListBg} ps-4 pe-5  pt-5`}>
+        <h1 style={{ marginBottom: '0.3rem', fontSize: '36px', fontWeight: 600 }} className='ps-4 pt-5'>Projects</h1>
         <Row>
-          <Col lg={4} md={6}>
+          <Col lg={4} md={6} className='p-0'>
             <Projects image={"/assets/image 23.png"}/>
           </Col>
-          <Col lg={4} md={6} >
+          <Col lg={4} md={6} className='p-0'>
             <Projects image={"/assets/transform2.png"}/>
           </Col>
-          <Col lg={4} md={6} >
+          <Col lg={4} md={6} className='p-0'>
             <Projects image={"/assets/transform3.png"}/>
           </Col>
           
         </Row>
       </Container>
-      <Container fluid style={{paddingLeft:'48px'}}>
+      <Container fluid className={` ${styles.carListBg} p-5`}>
         <Row>
           <Col md={6}>
-            <h3>After Sales Support</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <h2>After Sales Support</h2>
+            <p style={{ lineHeight: '1.8' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+            <p style={{ lineHeight: '1.8' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
           </Col>
           <Col md={6}>
             <Image
@@ -65,7 +66,7 @@ const SupportProjects = () => {
           </Col>
         </Row>
       </Container>
-      <Container>
+      <Container fluid className={` ${styles.carListBg} p-5`}>
         <Row>
           <Col md={6}>
             <Image
@@ -78,20 +79,20 @@ const SupportProjects = () => {
           </Col>
           <Col md={6}>
             <h3>After Sales Support</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <p style={{ lineHeight: '1.8' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+            <p style={{ lineHeight: '1.8' }}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
           </Col>
 
         </Row>
       </Container>
-      <Container className='bg-black text-white mt-3 mb-3'>
-        <Row>
-          <Col className='pt-5' md={6}>
-            <h3>Training</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      <Container fluid className={` ${styles.carListBg} text-white pb-5`}>
+        <Row className='bg-black '>
+          <Col className='p-5' md={6}>
+            <h2>Training</h2>
+            <p style={{ lineHeight: '1.8' }} className='fs-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             <div className="d-flex flex-wrap gap-2">
-              <Button variant="primary" className='rounded-0 px-3'>Contact Us</Button>
-              <Button variant="light" className='rounded-0 px-3'>Training</Button>
+              <Button variant="primary" className='rounded-1 px-4 py-1'>Contact Us</Button>
+              <Button variant="light" className='rounded-1 px-4 py-1'>Training</Button>
             </div>
           </Col>
           <Col md={6}>
