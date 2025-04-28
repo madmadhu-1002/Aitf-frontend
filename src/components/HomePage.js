@@ -62,7 +62,7 @@ const HomePage = () => {
             {/* About Aitf */}
             <Container className="mt-3" data-aos="fade-right">
                 <Row>
-                    <Col md={6}>
+                    <Col md={6} className="mb-5">
                         <div className="w-100">
                             <Image
                                 src="/assets/image 2.png" // public folder path
@@ -74,12 +74,12 @@ const HomePage = () => {
                             />
                         </div>
                     </Col>
-                    <Col md={6}>
+                    <Col md={6} className="mb-5 ">
                         <h3>About <span className="text-primary">AITF</span></h3>
-                        <p><span className="text-primary">&quot;Al Ihassan Trading FZCO (AITF)</span> is your premier destination for all automotive needs. We excel at delivering bespoke solutions tailored to our customer&apos;s unique requirements. With extensive experience and professional expertise, our dedicated design, manufacturing, supply, sales, and service teams are committed to crafting personalized solutions that meet individual needs and execute any automotive-related project with precision and excellence.
+                        <p className="lh-lg"><span className="text-primary">&quot;Al Ihassan Trading FZCO (AITF)</span> is your premier destination for all automotive needs. We excel at delivering bespoke solutions tailored to our customer&apos;s unique requirements. With extensive experience and professional expertise, our dedicated design, manufacturing, supply, sales, and service teams are committed to crafting personalized solutions that meet individual needs and execute any automotive-related project with precision and excellence.
                             Furthermore, AITF designs and manufactures modified special vehicles for various OEMs and categories. Our capabilities extend to developing medical, emergency and rescue vehicles, defense and security, and industrial applications. At one of our Centers of Excellence, we meticulously engineer each product from the ground up.
                             At AITF, our unwavering commitment to excellence, innovation, and customer satisfaction drives us...</p>
-                        <Button className="bg-black rounded-0 ps-3 pe-3">Know More..</Button>
+                        <Button className="bg-black rounded-0 ps-3 pe-3 ">Know More..</Button>
                     </Col>
                 </Row>
             </Container>

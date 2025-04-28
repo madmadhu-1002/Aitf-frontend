@@ -1,12 +1,14 @@
 "use client"
 
 import { useState } from "react";
+import { Container } from "react-bootstrap";
 
 const ModificationCard = ({image}) => {
     
         const [hovered, setHovered] = useState(false);
   return (
     <>
+    <Container className="d-flex justify-content-center mt-5">
     <div
         style={{
           borderRadius: '5px',
@@ -27,6 +29,7 @@ const ModificationCard = ({image}) => {
             display: 'block',
           }} />
       </div>
+      </Container>
     </>
   )
 }

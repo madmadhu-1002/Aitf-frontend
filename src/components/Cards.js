@@ -30,7 +30,7 @@ const Cards = () => {
       </Container>
       <Container fluid className="mt-5 border-bottom border-black pb-5">
           <h1 className='text-center pb-5' style={{ marginBottom: '0.3rem', fontSize: '36px', fontWeight: 700 }}>Popular Accessories</h1>
-          <Row>
+          <Row className='g-3'>
           <Col lg={3} md={4}  sm={6}>
           <AccessoryCard image={"/assets/image 41.png"} newArrival={true}/>
           </Col>

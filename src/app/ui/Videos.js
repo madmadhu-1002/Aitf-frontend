@@ -10,8 +10,8 @@ const Videos = () => {
   return (
     <>
       <Container className="mt-5">
-        <h1 style={{ marginBottom: '0.3rem', fontSize: '32px', fontWeight: 700 }}>Videos</h1>
-        <Row>
+        <h1 className="text-md-start text-center" style={{  fontSize: '32px', fontWeight: 700 }}>Videos</h1>
+        <Row className="g-3 mt-3">
           <Col xl={4} md={6}  >
             <VideoCard />
           </Col>
@@ -27,7 +27,7 @@ const Videos = () => {
 
       </Container>
       <Container className="mt-5">
-        <h1 style={{ marginBottom: '0.3rem', fontSize: '32px', fontWeight: 700 }}>Popular Modifications</h1>
+        <h1 className="text-md-start text-center" style={{ marginBottom: '0.3rem', fontSize: '32px', fontWeight: 700 }}>Popular Modifications</h1>
         <Row data-aos="fade-up"
      data-aos-anchor-placement="center-center">
           <Col lg={3} md={4}  sm={6}>

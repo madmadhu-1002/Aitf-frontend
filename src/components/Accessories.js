@@ -12,7 +12,7 @@ const Accessories = () => {
 
     return (
         <>
-            <div className="min-w-full flex-shrink-0 position-relative ">
+            <div className="min-w-full flex-shrink-0 position-relative py-4 ">
                 <Image
                     src="/assets/image 51.png"
                     width={1614}
@@ -41,7 +41,7 @@ const Accessories = () => {
                 </Row>
                 <Row className="g-0">
                     {/* Left Column */}
-                    <Col sm={3} className="me-sm-3">
+                    <Col sm={3} className="me-sm-3 pb-5">
                         <Row className={`${styles.carListBg} g-2 p-2 rounded-3`}>
                         <h3 className="text-primary fs-5 pt-4 py-3">Vehicle Modification</h3>
                             <Col lg={6} >

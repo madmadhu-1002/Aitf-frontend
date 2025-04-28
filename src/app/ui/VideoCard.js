@@ -19,6 +19,7 @@ const VideoCard = () => {
 
   return (
     <>
+    <div style={videostyles.wrapper}>
     <div style={videostyles.card}>
     <div
       style={videostyles.imageContainer}
@@ -48,12 +49,20 @@ const VideoCard = () => {
             <p style={videostyles.subtitle}>Complete performance upgrade package</p>
           </div>
           </div>
+          </div>
     </>
     
   );
 };
 
 const videostyles = {
+  wrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
+    minHeight: '100%', // optional if you want vertical centering also
+  },
   card: {
     width: '350px',
     overflow: 'hidden',

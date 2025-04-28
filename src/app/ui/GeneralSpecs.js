@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Row,Col } from 'react-bootstrap';
 
 const GeneralSpecs = () => {
   const [activeTab, setActiveTab] = useState('general');
@@ -76,8 +77,12 @@ const GeneralSpecs = () => {
             {tab === 'conversion' && 'Conversion features'}
           </button>
         ))}
-      </div>
+      </div><Row>
+        <Col md={6}>
         {renderSpecs()}
+        </Col>
+      </Row>
+        
         </div>
     </div>
   );
@@ -133,7 +138,7 @@ const styles = {
     boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
   },
   table: {
-    width: '50%',
+    width: '100%',
     borderCollapse: 'collapse'
   },
   row: {

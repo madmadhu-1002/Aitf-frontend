@@ -33,7 +33,7 @@ const CarList = () => {
 
         <Row className="g-1">
           {/* Left Column */}
-          <Col sm={4} className={`${styles.carListBg} me-sm-3 p-3 rounded-3`}>
+          <Col sm={4} className={`${styles.carListBg} me-sm-3 p-3 rounded-3 mb-5`}>
             <h2 className="fs-4 text-primary mt-4 mb-4">Vehicle Modification</h2>
             <Row className="g-2 mb-3 ">
             {modifications.map((modification, i) => (
@@ -50,6 +50,7 @@ const CarList = () => {
                       width={modification.width}
                       height={modification.height}
                       alt="ambulance"
+                      
                     />
                     <p className="fs-6 hover-text-primary p-1 mt-auto">{modification.name}</p>
                   </div>
